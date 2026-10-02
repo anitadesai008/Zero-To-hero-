@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZERO TO HERO</title>
+
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1115948701088751');
+    fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img
+            height="1"
+            width="1"
+            style="display:none"
+            src="https://www.facebook.com/tr?id=1115948701088751&ev=PageView&noscript=1"
+        />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+
+    <style>
+
+        *{
+            box-sizing:border-box;
+        }
+
+        html,body{
+            margin:0;
+            padding:0;
+            width:100%;
+            min-height:100%;
+            background:#080907;
+        }
+
+        body{
+            font-family:Arial,Helvetica,sans-serif;
+        }
+
+        .pt-page{
+            width:100%;
+            max-width:430px;
+            min-height:100vh;
+            margin:0 auto;
+            padding:10px 12px 18px;
+            background:#080907;
+            color:#fff;
+            text-align:center;
+        }
+
+        .pt-top{
+            margin-top:25px;
+            color:#cdb36b;
+            font-size:9px;
+            letter-spacing:3px;
+            line-height:1.6;
+        }
+
+        .pt-logo-box{
+            width:125px;
+            height:125px;
+            margin:25px auto 12px;
+            position:relative;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .pt-logo{
+            width:112px;
+            height:112px;
+            border-radius:50%;
+            object-fit:cover;
+            border:2px solid #c99532;
+            box-shadow:0 0 14px rgba(218,162,45,.35);
+            position:relative;
+            z-index:2;
+        }
+
+        .pt-logo-box:before{
+            content:"";
+            position:absolute;
+            width:135px;
+            height:135px;
+            border:1px solid rgba(192,150,53,.35);
+            border-radius:50%;
+        }
+
+        .pt-check{
+            position:absolute;
+            right:-1px;
+            bottom:1px;
+            width:32px;
+            height:32px;
+            border-radius:50%;
+            background:#e5b72e;
+            color:#111;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:16px;
+            font-weight:bold;
+            z-index:4;
+        }
+
+        .pt-name{
+            margin:8px 0 0;
+            font-size:25px;
+            line-height:1.1;
+            font-weight:700;
+        }
+
+        .pt-market{
+            margin-top:11px;
+            color:#d6bd7a;
+            font-size:11px;
+            letter-spacing:1.8px;
+            font-weight:bold;
+        }
+
+        .pt-line{
+            width:50px;
+            height:1px;
+            background:#b99236;
+            margin:19px auto 21px;
+        }
+
+        .pt-text{
+            font-size:12px;
+            line-height:1.55;
+            color:#eee;
+        }
+
+        .pt-highlight{
+            display:block;
+            color:#e6b934;
+            font-weight:bold;
+            margin-top:2px;
+        }
+
+
+        /* TELEGRAM BUTTON */
+
+        .pt-button{
+            width:100%;
+            max-width:370px;
+            height:55px;
+            margin:27px auto 13px;
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            color:#050505 !important;
+
+            background:linear-gradient(
+                120deg,
+                #ffcc00,
+                #fff176,
+                #ffb900,
+                #ffcc00
+            );
+
+            background-size:300% 300%;
+
+            border:2px solid #ffe66d;
+            border-radius:10px;
+
+            text-decoration:none !important;
+
+            font-size:15px;
+            font-weight:900;
+            letter-spacing:.2px;
+
+            box-shadow:
+                0 0 12px rgba(255,204,0,.65),
+                0 0 25px rgba(255,185,0,.3);
+
+            animation:goldMove 3s ease infinite;
+            transition:transform .2s;
+        }
+
+        .pt-button:hover{
+            color:#000 !important;
+            transform:scale(1.02);
+        }
+
+        .pt-button:active{
+            transform:scale(.98);
+        }
+
+
+        /* ADS BY ROHIT */
+
+        .pt-Rohit{
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+
+            margin-top:3px;
+            padding:7px 15px;
+
+            color:#aeb8ce !important;
+            background:#10110f;
+
+            border:1px solid rgba(196,155,57,.45);
+            border-radius:6px;
+
+            text-decoration:none !important;
+
+            font-size:9px;
+            font-weight:700;
+            letter-spacing:.4px;
+
+            box-shadow:0 0 8px rgba(190,148,48,.08);
+
+            transition:.2s;
+        }
+
+        .pt-Rohit:hover{
+            color:#f1d477 !important;
+            border-color:#c59b37;
+        }
+
+
+        .pt-footer-line{
+            width:90%;
+            height:1px;
+            background:rgba(180,150,80,.25);
+            margin:22px auto 18px;
+        }
+
+        .pt-copy{
+            color:#71809e;
+            font-size:8px;
+        }
+
+
+        @keyframes goldMove{
+
+            0%{
+                background-position:0% 50%;
+            }
+
+            50%{
+                background-position:100% 50%;
+            }
+
+            100%{
+                background-position:0% 50%;
+            }
+
+        }
+
+
+        @media(max-width:600px){
+
+            .pt-page{
+                padding:8px 10px 16px;
+            }
+
+            .pt-top{
+                margin-top:22px;
+            }
+
+            .pt-logo-box{
+                margin-top:22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="pt-page">
+
+
+    <!-- TOP -->
+
+    <div class="pt-top">
+        OFFICIAL TELEGRAM<br>
+        CHANNEL
+    </div>
+
+
+    <!-- LOGO -->
+
+    <div class="pt-logo-box">
+
+        <img
+            class="pt-logo"
+            src="https://d1yei2z3i6k35z.cloudfront.net/thumb_150/6ab9592251f587.32859051_WhatsAppImage2026-09-27at11.24.03PM.jpeg"
+            alt="ZERO TO HERO"
+        >
+
+        <div class="pt-check">
+            ✓
+        </div>
+
+    </div>
+
+
+    <!-- CHANNEL NAME -->
+
+    <div class="pt-name">
+        ZERO TO HERO
+    </div>
+
+
+    <!-- MARKET -->
+
+    <div class="pt-market">
+        NIFTY · BANKNIFTY · SENSEX
+    </div>
+
+
+    <div class="pt-line"></div>
+
+
+    <!-- DESCRIPTION -->
+
+    <div class="pt-text">
+
+        Discover Elite Financial Education &
+        <br>
+        Trading Basics
+
+        <span class="pt-highlight">
+            Learn Stock Market Strategies From Experts
+        </span>
+
+    </div>
+
+
+    <!-- TELEGRAM BUTTON -->
+
+    <a
+        class="pt-button"
+        href="https://t.me/+4_c8arwJPqg1OThl"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        JOIN TELEGRAM CHANNEL
+
+    </a>
+
+
+    <!-- ADS BY ROHIT -->
+
+    <a
+        class="pt-Rohit"
+        href="https://t.me/+-dirfFC-Z9dkZTdl"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        ads manage by — ads by Rohit
+
+    </a>
+
+
+    <div class="pt-footer-line"></div>
+
+
+    <div class="pt-copy">
+        © 2026 · All rights reserved.
+    </div>
+
+
+</div>
+
+</body>
+</html>
